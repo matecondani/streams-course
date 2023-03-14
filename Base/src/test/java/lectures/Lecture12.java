@@ -14,6 +14,7 @@ public class Lecture12 {
         .stream()
         .map(Person::getEmail)
         .collect(Collectors.toList());
+    //which is the same that .collect(ArrayList::new, Arraylist::add, ArrayList::addAll);
 
     emails.forEach(System.out::println);
   }
